@@ -32,3 +32,21 @@ GROUP BY ut.title
 ORDER BY COUNT (ut.title) DESC;
 
 SELECT*FROM retiring_titles;
+
+--Deliverable 2
+--Deliverable 2
+SELECT DISTINCT ON (e.emp_no) e.emp_no,
+	e.first_name,
+	e.last_name,
+	e.birth_date
+	de.from_date,
+	de.to_date,
+	ti.title
+INTO mentorship_eligibility
+FROM employees AS e
+	INNER JOIN dept_emp AS de
+		ON e.emp_no = de.emp_no
+	INNER JOIN titles AS ti
+		ON e.emp_no = ti.emp_no
+
+--not done with code, left off  on step 8
