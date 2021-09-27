@@ -1,3 +1,4 @@
+--Deliverable 1
 SELECT e.emp_no,
 	e.first_name,
 	e.last_name,
@@ -23,3 +24,11 @@ FROM retirement_titles AS rt
 ORDER BY rt.emp_no, rt.to_date DESC;
 
 SELECT*FROM unique_titles;
+
+SELECT COUNT(ut.title), ut.title
+INTO retiring_titles
+FROM unique_titles as ut
+GROUP BY ut.title
+ORDER BY COUNT (ut.title) DESC;
+
+SELECT*FROM retiring_titles;
