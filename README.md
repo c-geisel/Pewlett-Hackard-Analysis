@@ -28,8 +28,10 @@ Four tables were created in order to find the desired outcomes. Three tables wer
 In order to find how many roles will need to be filled as the "silver tsunami" takes place, another query needs to be performed. This can be found using the retiring_titles table. This table finds the number of employees retiring by title. We can find the total number of counts by finding the sum of the counts using the following query.
 
 '''
+
 SELECT SUM(Quantity)
 FROM OrderDetails;
+
 '''
 
 Upon running this query we get the following output: 
