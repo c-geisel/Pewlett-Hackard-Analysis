@@ -24,8 +24,19 @@ Four tables were created in order to find the desired outcomes. Three tables wer
 
 
 ## Summary 
-Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
 
-How many roles will need to be filled as the "silver tsunami" begins to make an impact?
+In order to find how many roles will need to be filled as the "silver tsunami" takes place, another query needs to be performed. This can be found using the retiring_titles table. This table finds the number of employees retiring by title. We can find the total number of counts by finding the sum of the counts using the following query.
+
+'''
+SELECT SUM(Quantity)
+FROM OrderDetails;
+'''
+
+Upon running this query we get the following output: 
+
+![total_retiring.png](Images/total_retiring.png)
+
+This shows that there are a total of 90,398 positions that will need to be filled. In order to make an impact a considerable amount of these roles will need to be filled to make an impact, nearly all 90,000.
+
 
 Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
