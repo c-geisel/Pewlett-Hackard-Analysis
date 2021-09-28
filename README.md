@@ -29,9 +29,9 @@ In order to find how many roles will need to be filled as the "silver tsunami" t
 
 '''
 
-  SELECT SUM(Quantity)
-  FROM OrderDetails;
-
+    SELECT SUM(Count)
+    FROM retiring_titles;
+    
 '''
 
 Upon running this query we get the following output: 
