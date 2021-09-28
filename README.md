@@ -29,8 +29,8 @@ In order to find how many roles will need to be filled as the "silver tsunami" t
 
 '''
 
-SELECT SUM(Quantity)
-FROM OrderDetails;
+  SELECT SUM(Quantity)
+  FROM OrderDetails;
 
 '''
 
